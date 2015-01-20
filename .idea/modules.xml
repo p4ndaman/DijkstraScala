@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/competency.iml" filepath="$PROJECT_DIR$/competency.iml" />
+      <module fileurl="file://$PROJECT_DIR$/DijkstraScala.iml" filepath="$PROJECT_DIR$/DijkstraScala.iml" />
     </modules>
   </component>
 </project>

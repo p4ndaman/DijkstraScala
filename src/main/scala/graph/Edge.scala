@@ -5,5 +5,5 @@ package main.scala.graph
  *
  * Can be directed or undirected, depending on treatment of startNode and endNode
  */
-class Edge(val startNode:Node, val endNode:Node, val cost:Int) {
+case class Edge(val startNode:Node, val endNode:Node, val cost:Int) {
 }

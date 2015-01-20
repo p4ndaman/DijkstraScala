@@ -1,5 +1,7 @@
 package main.scala.graph
 
+import java.io.File
+
 import scala.io.Source
 import main.scala.utility.extractors.Int
 
@@ -16,11 +18,11 @@ import main.scala.utility.extractors.Int
 class DiGraphFileParser {
   lazy val digraph:DiGraph = new DiGraph();
 
-  def parseFile(filePath:String):DiGraph = {
-    Source.fromFile(filePath).getLines() foreach (line =>
+  def parseFile(file:File):DiGraph = {
+    Source.fromFile(file).getLines() foreach (line =>
       (line.split(','):Seq[String]) match {
         case startNodeId+:rest => parseEdges(startNodeId, rest);
-      });
+      })
     digraph
   }
 
